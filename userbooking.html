@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assignment2.css">
+</head>
+
+<body>
+
+
+
+    <!--navigation bar- find out how to add colour -->
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-light cute-navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="homepage.html"> Alternative Music 4 You</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="nav-text navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-bar-writing nav-item">
+                        <a class="nav-link active" aria-current="true" href="homepage.html">Home</a>
+                    </li>
+                    <!--how to make it so nav bar knows wehre you are -->
+                    <li class="nav-item">
+                        <a class="nav-link active" href="eventdetails.html">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="eventcreation.html">Create your own Event</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="userbooking.html" id="active">Bookings</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="signup">
+                    <button class="blue-style-btn btn btn-outline-success" type="submit">Log Out</button>
+                </form>
+
+            </div>
+        </div>
+    </nav>
+
+
+
+    <header>
+        <header class="Page-header">
+        </header>
+    </header>
+
+
+    <main>
+        <h1> Booking History</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-xs-6">
+                    <table class="table table-image table-hover">
+                        <thead>
+                            <tr>
+                                <th scope="col">Image</th>
+                                <th scope="col">Order ID</th>
+                                <th scope="col">Event Name</th>
+                                <th scope="col">Artist</th>
+                                <th scope="col">Tickets purchased</th>
+                                <th scope="col">Purchase Date</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="w-25">
+                                    <img src="images/lana-del-rey.jpg" class="img-fluid img-circle" alt="Lana">
+                                </td>
+                                <th scope="row">#8735482</th>
+                                <td>Cinnamon Girl Concert</td>
+                                <td>Lana Del Rey</td>
+                                <td>5</td>
+                                <td>10:37pm <br>10/04/2023</td>
+                            </tr>
+                            <tr>
+                                <td class="w-25">
+                                    <img src="images/weezer.JPG" class="img-fluid img-circle">
+                                </td>
+                                <th scope="row">#9273957</th>
+                                <td>Blue Concert </td>
+                                <td>Weezer</td>
+                                <td>7</td>
+                                <td>11:04am <br>12/3/2023</td>
+                            </tr>
+                            <tr>
+                                <td class="w-25">
+                                    <img src="images/yunglean.JPG" class="img-fluid img-circle">
+                                </td>
+                                <th scope="row">#5273548</th>
+                                <td>Stardust Tour</td>
+                                <td>Yung Lean</td>
+                                <td>3</td>
+                                <td>2:00pm <br>12/3/2023</td>
+                            </tr>
+                            <tr>
+                                <td class="w-25">
+                                    <img src="images/listenout.JPG" class="img-fluid img-circle">
+                                </td>
+                                <th scope="row">#2182644</th>
+                                <td>Listen Out </td>
+                                <td>Various artists</td>
+                                <td>4</td>
+                                <td>12:03am <br>12/07/2022</td>
+                            </tr>
+                            <tr>
+                                <td class="w-25">
+                                    <img src="images/splendour.JPG" class="img-fluid img-circle">
+                                </td>
+                                <th scope="row">#2648365</th>
+                                <td>Splendour in the Grass </td>
+                                <td>Various Artists</td>
+                                <td>1</td>
+                                <td>11:042pm <br>12/3/2022</td>
+                            </tr>
+                            <tr>
+                                <td class="w-25">
+                                    <img src="images/panchiko.jpg" class="img-fluid img-circle">
+                                </td>
+                                <th scope="row">#1625483</th>
+                                <td>D>E>A>T>H>M>E>T>A>L> World Tour</td>
+                                <td>Panchiko</td>
+                                <td>2</td>
+                                <td>11:55am <br>27/1/2021</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+
+    <footer class="bg-light text-center text-white">
+        <div class="container p-4 pb-0">
+            <section class="mb-4">
+                <!-- buttons -->
+                <a class="second-header-btn btn text-white btn-floating m-1">Instagram </a>
+                <a class="red-style-btn btn text-white btn-floating m-1">Email </a>
+                <a class="blue-style-btn btn text-white btn-floating m-1">Phone </a>
+            </section>
+        </div>
+
+        <div class="footer-style text-center p-3">
+            ©2023 Copyright: AlternativeMusic4You
+        </div>
+    </footer>
+
+
+
+
+    <!--------------------------------------------------------------->
+    <!---->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+</body>
+
+</html>

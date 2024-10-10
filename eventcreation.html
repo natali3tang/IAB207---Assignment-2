@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assignment2.css">
+</head>
+
+<body>
+
+
+    <!--navigation bar- find out how to add colour -->
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-light cute-navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="homepage.html"> Alternative Music 4 You</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="nav-text navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-bar-writing nav-item">
+                        <a class="nav-link active" aria-current="true" href="homepage.html">Home</a>
+                    </li>
+                    <!--how to make it so nav bar knows wehre you are -->
+                    <li class="nav-item">
+                        <a class="nav-link active" href="eventdetails.html">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="eventcreation.html" id="active">Create your own Event</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="userbooking.html">Bookings</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="signup">
+                    <button class="red-style-btn btn btn-outline-success" type="submit">Sign Up</button>
+                </form>
+                <form class="d-flex" role="login">
+                    <button class="blue-style-btn btn btn-outline-success" type="submit">Log in</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <header>
+        <header class="Page-header">
+        </header>
+    </header>
+
+    <main>
+
+        <div class="container">
+            <h2>Create Event</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <!-- create event -->
+                    <div class="mb-3">
+                        <label for="eventName" class="form-label">Enter Event Name<span class= "red-text-style">*</span> </label>
+                        <input type="text" class="form-control" id="eventName" name="eventName">
+                    </div>
+                    </form>
+                </div>
+
+                <div class="col-md-6">
+                    <!-- enter artists-->
+                    <div class="mb-3">
+                        <label for="eventartist" class="form-label">Enter Artist/Artists <span class= "red-text-style">*</span></label>
+                        <input type="text" class="form-control" id="eventartist" name="eventartist">
+                    </div>
+                    </form>
+                </div>
+
+
+                <div class="form-group">
+                    <label for="inputState">Enter Event Status <span class= "red-text-style">*</span></label>
+                    <select id="inputState" class="form-control">
+                        <option selected>Choose...</option>
+                        <option>Solo Performances</option>
+                        <option>Band Gigs</option>
+                        <option>Festivals</option>
+                        <option>Virtual Concerts</option>
+                        <option>Live Streams</option>
+                    </select>
+                </div>
+
+                <div class="mb-3"></div>
+
+
+                <div class="form-group col-md-6">
+                    <label for="eventDate">Enter Start Date and Start-Time <span class= "red-text-style">*</span></label>
+                    <input type="date" class="form-control" id="eventDate" name="eventDate" required>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="eventDate">Enter Finish Date and Finish-time<span class= "red-text-style">*</span></label>
+                    <input type="date" class="form-control" id="eventDate" name="eventDate" required>
+                </div>
+
+                <div class="mb-3"></div>
+
+                <div class="form-group col-md-6">
+                    <label for="tickets"> Enter Available Number of Tickets <span class= "red-text-style">*</span></label>
+                    <input type="text" class="form-control" id="tickets" name="tickets" required>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="inputState">Enter Event Status <span class= "red-text-style">*</span></label>
+                    <select id="inputState" class="form-control">
+                        <option selected>Choose...</option>
+                        <option>Open</option>
+                        <option>Inactive</option>
+                        <option>Cancelled</option>
+                        <option>Sold Out</option>
+                    </select>
+                </div>
+            </div>
+
+            <!--spacing-->
+            <div class="mb-3"></div>
+
+            <div class="form-row">
+                <label for="eventDescription">Enter Event Description</label>
+                <textarea class="form-control" id="eventDescription" name="eventDescription" rows="4"
+                    required></textarea>
+            </div>
+
+            <!--spacing-->
+            <div class="mb-3"></div>
+
+            <div class="form-group col-md-6">
+                <label for="venueLocation">Venue Location<span class= "red-text-style">*</span></label>
+                <input type="text" placeholder="If it is a livestream or virtual concert, Please input the link "
+                    class="form-control" id="venueLocation" name="venueLocation" required>
+            </div>
+            <div class="form-group col-md-6">
+                <label for="eventImage">Upload Image File</label>
+                <input type="file" class="form-control-file" id="eventImage" name="eventImage" accept="image/*"
+                    required>
+            </div>
+        </div>
+        </div>
+        <div class="container col-md-6">
+            <button type="submit" class="blue-style-btn btn btn-primary btn-lg btn-block">Create Event</button>
+            <button type="update" class="red-style-btn btn btn-primary btn-lg btn-block">Update Event</button>
+        </div>
+        </div>
+    </main>
+    <footer class="bg-light text-center text-white">
+        <div class="container p-4 pb-0">
+            <section class="mb-4">
+                <!-- buttons -->
+                <a class="second-header-btn btn text-white btn-floating m-1">Instagram </a>
+                <a class="red-style-btn btn text-white btn-floating m-1">Email </a>
+                <a class="blue-style-btn btn text-white btn-floating m-1">Phone </a>
+            </section>
+        </div>
+
+        <div class="footer-style text-center p-3">
+            ©2023 Copyright: AlternativeMusic4You
+        </div>
+    </footer>
+
+    <!--------------------------------------------------------------->
+    <!---->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

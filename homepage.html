@@ -1,0 +1,503 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Alternative Music 4 You</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assignment2.css">
+</head>
+
+<body>
+    <main>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-light cute-navbar">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="homepage.html"> Alternative Music 4 You</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="nav-text navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-bar-writing nav-item">
+                            <a class="nav-link active" aria-current="true" href="homepage.html" id="active">Home</a>
+                        </li>
+                        <!--how to make it so nav bar knows wehre you are -->
+                        <li class="nav-item">
+                            <a class="nav-link active" href="eventdetails.html">Events</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="eventcreation.html">Create your own Event</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="userbooking.html">Bookings</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="signup">
+                        <button class="red-style-btn btn btn-outline-success" type="submit">Sign Up</button>
+                    </form>
+                    <form class="d-flex" role="login">
+                        <button class="blue-style-btn btn btn-outline-success" type="submit">Log in</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+        <header class="Concert-header">
+            <div class="header-content">
+                <h1>Welcome to Alternative Music 4 You</h1>
+                <p>Explore the different types of Alternative music genres</p>
+                <div class="button-container">
+                    <!-- Example single danger button -->
+                    <div class="dropdown-center">
+                        <button class="button-colour btn btn-secondary dropdown-toggle" type="button"
+                            data-bs-toggle="dropdown" aria-expanded="false" aria-expanded="false">
+                            View Genres
+                        </button>
+                        <ul class="dropdown-menu">
+                            <a class="dropdown-item" href="#section1">Solo Performances</a>
+                            <a class="dropdown-item" href="#section2">Band Gigs</a>
+                            <a class="dropdown-item" href="#section3">Festivals</a>
+                            <a class="dropdown-item" href="#section4">Virtual Concerts</a>
+                            <a class="dropdown-item" href="#section5">Livestreams</a>
+                        </ul>
+                    </div>
+
+                    <a href="eventcreation.html" class="second-header-btn btn btn-secondary">Create Your Own
+                        Event</a>
+                </div>
+            </div>
+        </header>
+
+        <!--button-->
+
+
+        <!-- Section 1 -->
+        <div id="section1" class="container-fluid">
+            <!--TITLE-->
+            <h1>Upcoming Solo Performances</h1>
+
+            <div class="container text-center">
+                <div class="space row">
+                    <!--card-->
+                    <div class="concert-cards-box card">
+                        <div class="card-image">
+                            <img src="https://images-prod.dazeddigital.com/640/azure/dazed-prod/1270/3/1273950.jpg"
+                                class="card-img-top" alt="lana-del-rey">
+                        </div>
+                        <div class="card-body">
+                            <h6 class="card-title">Cinnamon girl Tour</h6>
+                            <h5 class="card-title-bold">Lana Del Rey</h5>
+                            <p class="card-text">Thursday, 22nd January 2025, Start-Time: 6pm</p>
+                            <p class="card-text">Venue: Metricon Stadium</p>
+                            <p class="card-description">Status: <span class="green-text-style">Open</span></p>
+                        </div>
+                        <a href="eventdetails.html" class="second-header-btn btn btn-primary btn-not-round">View
+                            More</a>
+                    </div>
+
+                    <div class="concert-cards-box card">
+                        <div class="card-image">
+                            <img src="images/kingkrule.JPG" class="card-img-top" alt="kingkrule">
+                        </div>
+                        <div class="card-body">
+                            <h6 class="card-title">Bleak Blake</h6>
+                            <h5 class="card-title-bold">King Krule</h5>
+                            <p class="card-text">Wednesday, 18th March 2024, Start-Time: 4pm</p>
+                            <p class="card-text">Venue: Vinnie's Dive Bar</p>
+                            <p class="card-description">Status: <span class="red-text-style"> Sold Out</span></p>
+                        </div>
+                        <a href="eventdetails.html" class="second-header-btn btn btn-primary">View More</a>
+                    </div>
+
+                    <div class="concert-cards-box card">
+                        <div class="card-image">
+                            <img src="images/yunglean.JPG" class="card-img-top" alt="yunglean">
+                        </div>
+                        <div class="card-body">
+                            <h6 class="card-title">StarDust Tour</h6>
+                            <h5 class="card-title-bold">Yung Lean</h5>
+                            <p class="card-text">Monday, 13th December 2024, Start-Time: 7:30pm</p>
+                            <p class="card-text">Venue: The BrightSide</p>
+                            <p class="card-description">Status: <span class="green-text-style">Open</span></p>
+                        </div>
+                        <a href="eventdetails.html" class="second-header-btn btn btn-primary">View More</a>
+                    </div>
+                    <div class="concert-cards-box card">
+                        <div class="card-image">
+                            <img src="images/steve_lacey.webp" class="card-img-top" alt="Steve Lacy and instrument">
+                        </div>
+                        <div class="card-body">
+                            <h6 class="card-title">Apollo Concert</h6>
+                            <h5 class="card-title-bold">Steve Lacy</h5>
+                            <p class="card-text">Friday, 3rd March 2025, Start-Time: 9pm</p>
+                            <p class="card-text">Venue: The Triffd</p>
+                            <p class="card-description">Status: <span class="green-text-style">Open</span></p>
+                        </div>
+                        <a href="eventdetails.html" class="second-header-btn btn btn-primary">View More</a>
+                    </div>
+                    <div class="concert-cards-box card">
+                        <div class="card-image">
+                            <img src="images/beabadoobee.jpg" class="card-img-top" alt="Beabdoobee">
+                        </div>
+                        <div class="card-body">
+                            <h6 class="card-title">LoveWorm Tour</h6>
+                            <h5 class="card-title-bold">Beabadoobee</h5>
+                            <p class="card-text">Sunday, 21st November 2024, Start-Time: 11pm</p>
+                            <p class="card-text">Venue: Vinnie's Dive Bar</p>
+                            <p class="card-description">Status: <span class="red-text-style"> Sold Out</span></p>
+                        </div>
+                        <a href="eventdetails.html" class="second-header-btn btn btn-primary">View More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="section2" class="container-fluid">
+
+            <h1>Upcoming Band Gigs</h1>
+            <div class="container text-center">
+                <div class="space row">
+                    <!-- <div class="col-md-3 col-md-3">-->
+                    <!--card-->
+                    <div class="concert-cards-box card">
+                        <div class="card-image">
+                            <img src="https://faroutmagazine.co.uk/static/uploads/1/2019/09/The_Strokes_by_Roger_Woolman.jpg"
+                                class="card-img-top" alt="The_Strokes_by_Roger_Woolman">
+                        </div>
+                        <div class="card-body">
+                            <h6 class="card-title">Is this it Tour</h6>
+                            <h5 class="card-title-bold">The Strokes</h5>
+                            <p class="card-text">Friday, 1st January 2024, Start-Time: 7pm</p>
+                            <p class="card-text">Venue: Vinnie's Dive Bar</p>
+                            <p class="card-description">Status: <span class="green-text-style">Open</span></p>
+                        </div>
+                        <a href="eventdetails.html" class="second-header-btn btn btn-primary">View More</a>
+
+                    </div>
+                    <div class="concert-cards-box card">
+                        <div class="card-image">
+                            <img src="images/weezer.JPG" class="card-img-top" alt="weezer">
+                        </div>
+                        <div class="card-body">
+                            <h6 class="card-title">Blue Tour</h6>
+                            <h5 class="card-title-bold">Weezer</h5>
+                            <p class="card-text">Wednesday, 31st October 2026, Start-Time: 8pm</p>
+                            <p class="card-text">Venue: Red rocks</p>
+                            <p class="card-description">Status: <span class="green-text-style">Open</span></p>
+                        </div>
+                        <a href="eventdetails.html" class="second-header-btn btn btn-primary">View More</a>
+
+                    </div>
+                    <div class="concert-cards-box card">
+                        <div class="card-image">
+                            <img src="images/cocteau-twins.webp" class="card-img-top" alt="cocteau-twins">
+                        </div>
+                        <div class="card-body">
+                            <h6 class="card-title">Heavenly Tour</h6>
+                            <h5 class="card-title-bold">Cocteau Twins</h5>
+                            <p class="card-text">Tuesday, 2nd June 2024, Start-Time: 6pm</p>
+                            <p class="card-text">Venue: The Tivoli </p>
+                            <p class="card-description">Status: <span class="green-text-style">Open</span></p>
+                        </div>
+                        <a href="eventdetails.html" class="second-header-btn btn btn-primary">View More</a>
+                    </div>
+                    <div class="concert-cards-box card">
+                        <div class="card-image">
+                            <img src="images/panchiko.jpg" class="card-img-top" alt="panchiko">
+                        </div>
+                        <div class="card-body">
+                            <h6 class="card-title">D>E>A>T>H>M>E>T>A>L> Concert</h6>
+                            <h5 class="card-title-bold">Panchiko</h5>
+                            <p class="card-text">Monday, 1st July 2024, Start-Time: 7pm</p>
+                            <p class="card-text">Venue: Cali Music stadium</p>
+                            <p class="card-description">Status: <span class="green-text-style">Open</span> </p>
+                        </div>
+                        <a href="eventdetails.html" class="second-header-btn btn btn-primary">View More</a>
+                    </div>
+                    <div class="concert-cards-box card">
+                        <div class="card-image">
+                            <img src="images/arcticmonkeys.jpg" class="card-img-top" alt="The_Strokes_by_Roger_Woolman">
+                        </div>
+                        <div class="card-body">
+                            <h6 class="card-title">The Car World Tour</h6>
+                            <h5 class="card-title-bold">Arctic Monkeys</h5>
+                            <p class="card-text">Friday, 25th August 2024, Start-Time: 7pm</p>
+                            <p class="card-text">Venue: Gold Coast Stadium</p>
+                            <p class="card-description">Status: <span class="green-text-style">Open</span></p>
+                        </div>
+                        <a href="eventdetails.html" class="second-header-btn btn btn-primary">View More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="section3" class="container-fluid">
+
+            <h1>Festivals</h1>
+            <div class="container text-center">
+                <div class="space row">
+                    <!-- <div class="col-md-3 col-md-3">-->
+                    <!--card-->
+                    <div class="concert-cards-box card">
+                        <div class="card-image">
+                            <img src="images/listenout.JPG" class="card-img-top" alt="listenout">
+                        </div>
+                        <div class="card-body">
+                            <h6 class="card-title">Various Artists</h6>
+                            <h5 class="card-title-bold">Listen Out 2023</h5>
+                            <p class="card-text">Friday, 15th September 2023, Start-Time: 12pm</p>
+                            <p class="card-text">Venue: Brisbane Showgrounds</p>
+                            <p class="card-description">Status: <span class="red-text-style"> Sold Out</span></p>
+                        </div>
+                        <a href="eventdetails.html" class="second-header-btn btn btn-primary">View More</a>
+
+                    </div>
+                    <div class="concert-cards-box card">
+                        <div class="card-image">
+                            <img src="images/laneway.jpg" class="card-img-top" alt="laneway">
+                        </div>
+                        <div class="card-body">
+                            <h6 class="card-title">Various Artists</h6>
+                            <h5 class="card-title-bold">Lane way</h5>
+                            <p class="card-text">Saturday, 6th October 2023, Start-Time: 1pm</p>
+                            <p class="card-text">Venue: Brisbane Showgrounds</p>
+                            <p class="card-description">Status: <span class="green-text-style">Open</span></p>
+                        </div>
+                        <a href="eventdetails.html" class="second-header-btn btn btn-primary">View More</a>
+
+                    </div>
+                    <div class="concert-cards-box card">
+                        <div class="card-image">
+                            <img src="images/spiltmilk.jpg" class="card-img-top" alt="spiltmilk">
+                        </div>
+                        <div class="card-body">
+                            <h6 class="card-title">Various Artists</h6>
+                            <h5 class="card-title-bold">Spilt Milk</h5>
+                            <p class="card-text">Friday, 13th April 2024, Start-Time: 2pm</p>
+                            <p class="card-text">Venue: The Spit</p>
+                            <p class="card-description">Status: <span class="grey-text-style">Inactive</span> </p>
+                        </div>
+                        <a href="eventdetails.html" class="second-header-btn btn btn-primary">View More</a>
+                    </div>
+                    <div class="concert-cards-box card">
+                        <div class="card-image">
+                            <img src="images/soundwave.jpg" class="card-img-top" alt="soundwave">
+                        </div>
+                        <div class="card-body">
+                            <h6 class="card-title">Various Artists</h6>
+                            <h5 class="card-title-bold">Soundwave 2023</h5>
+                            <p class="card-text">Sunday, 20th September 2023, Start-Time: 4pm</p>
+                            <p class="card-text">Venue: Brisbane Showgrounds</p>
+                            <p class="card-description">Status: <span class="red-text-style"> Sold Out</span></p>
+                        </div>
+                        <a href="eventdetails.html" class="second-header-btn btn btn-primary">View More</a>
+                    </div>
+                    <div class="concert-cards-box card">
+                        <div class="card-image">
+                            <img src="images/falls.jpg" class="card-img-top" alt="fallsfestival">
+                        </div>
+                        <div class="card-body">
+                            <h6 class="card-title">Ice Spice & JPEGMAFIA</h6>
+                            <h5 class="card-title-bold">Falls festival</h5>
+                            <p class="card-text">Friday, 25th December 2023, Start-Time: 5pm</p>
+                            <p class="card-text">Venue: Byron Bay waters</p>
+                            <p class="card-description">Status: <span class="red-text-style"> Sold Out</span></p>
+                        </div>
+                        <a href="eventdetails.html" class="second-header-btn btn btn-primary">View More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="section4" class="container-fluid">
+
+            <h1>Virtual Concerts</h1>
+            <div class="container text-center">
+                <div class="space row">
+                    <!-- <div class="col-md-3 col-md-3">-->
+                    <!--card-->
+                    <div class="concert-cards-box card">
+                        <div class="card-image">
+                            <img src="images/mbv.jpg" class="card-img-top" alt="mbv">
+                        </div>
+                        <div class="card-body">
+                            <h6 class="card-title">Virtual mbv tour!</h6>
+                            <h5 class="card-title-bold">My Bloody Valentine</h5>
+                            <p class="card-text">Wednesday, 15th August 2023, Start-Time: 10pm</p>
+                            <p class="card-text">Venue: Link</p>
+                            <p class="card-description">Status: <span class="green-text-style">Open</span></p>
+                        </div>
+                        <a href="eventdetails.html" class="second-header-btn btn btn-primary">View More</a>
+
+                    </div>
+                    <div class="concert-cards-box card">
+                        <div class="card-image">
+                            <img src="images/avalanches.webp" class="card-img-top" alt="avalanches">
+                        </div>
+                        <div class="card-body">
+                            <h6 class="card-title">Since I left you concert</h6>
+                            <h5 class="card-title-bold">The Avalanches</h5>
+                            <p class="card-text">Tuesday, 11th September 2023, Start-Time: 2pm</p>
+                            <p class="card-text">Venue: Company Website</p>
+                            <p class="card-description">Status: <span class="green-text-style">Cancelled</span></p>
+                        </div>
+                        <a href="eventdetails.html" class="second-header-btn btn btn-primary">View More</a>
+
+                    </div>
+                    <div class="concert-cards-box card">
+                        <div class="card-image">
+                            <img src="images/beachhouse.jpg" class="card-img-top" alt="beach house">
+                        </div>
+                        <div class="card-body">
+                            <h6 class="card-title">Majorette</h6>
+                            <h5 class="card-title-bold">Beach House</h5>
+                            <p class="card-text">Friday, 5th October 2023, Start-Time: 3pm</p>
+                            <p class="card-text">Venue: Company Website</p>
+                            <p class="card-description">Status:<span class="grey-text-style">Inactive</span></p>
+                        </div>
+                        <a href="eventdetails.html" class="second-header-btn btn btn-primary">View More</a>
+                    </div>
+                    <div class="concert-cards-box card">
+                        <div class="card-image">
+                            <img src="images/bladee.webp" class="card-img-top" alt="bladee">
+                        </div>
+                        <div class="card-body">
+                            <h6 class="card-title">Sad Boys</h6>
+                            <h5 class="card-title-bold">Bladee</h5>
+                            <p class="card-text">Saturday, 20th December 2024, Start-Time: 8:45pm</p>
+                            <p class="card-text">Venue: Link</p>
+                            <p class="card-description">Status:<span class="green-text-style">Cancelled</span></p>
+                        </div>
+                        <a href="eventdetails.html" class="second-header-btn btn btn-primary">View More</a>
+                    </div>
+                    <div class="concert-cards-box card">
+                        <div class="card-image">
+                            <img src="images/carseat.webp" class="card-img-top" alt="carseat headret">
+                        </div>
+                        <div class="card-body">
+                            <h6 class="card-title">Cute Thing Online Halloween Special</h6>
+                            <h5 class="card-title-bold">Car Seat Headrest</h5>
+                            <p class="card-text">Sunday, 31st October 2023, Start-Time: 9pm</p>
+                            <p class="card-text">Venue: Link</p>
+                            <p class="card-description">Status: <span class="red-text-style"> Sold Out</span></p>
+                        </div>
+                        <a href="eventdetails.html" class="second-header-btn btn btn-primary">View More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="section5" class="container-fluid">
+
+            <h1>Livestreams</h1>
+            <div class="container text-center">
+                <div class="space row">
+                    <!--card-->
+                    <div class="concert-cards-box card">
+                        <div class="card-image">
+                            <img src="images/clairo.jpg" class="card-img-top" alt="clairo">
+                        </div>
+                        <div class="card-body">
+                            <h6 class="card-title">Amoeba</h6>
+                            <h5 class="card-title-bold">Clairo</h5>
+                            <p class="card-text">Saturday, 30st October 2023, Start-Time: 7pm</p>
+                            <p class="card-text">Venue: Email Link</p>
+                            <p class="card-description">Status: <span class="red-text-style"> Sold Out</span></p>
+                        </div>
+                        <a href="eventdetails.html" class="second-header-btn btn btn-primary">View More</a>
+
+                    </div>
+                    <div class="concert-cards-box card">
+                        <div class="card-image">
+                            <img src="images/icespice.jpg" class="card-img-top" alt="ice spicr">
+                        </div>
+                        <div class="card-body">
+                            <h6 class="card-title">World tour</h6>
+                            <h5 class="card-title-bold">Ice Spice</h5>
+                            <p class="card-text">Friday, 22nd November 2027, Start-Time: 10pm</p>
+                            <p class="card-text">Venue: Link</p>
+                            <p class="card-description">Status: <span class="grey-text-style">Inactive</span></p>
+                        </div>
+                        <a href="eventdetails.html" class="second-header-btn btn btn-primary">View More</a>
+
+                    </div>
+                    <div class="concert-cards-box card">
+                        <div class="card-image">
+                            <img src="images/jpegmafia.jpg" class="card-img-top" alt="JPEGMAFIA">
+                        </div>
+                        <div class="card-body">
+                            <h6 class="card-title">12</h6>
+                            <h5 class="card-title-bold">JPEGMAFIA</h5>
+                            <p class="card-text">Wednesday, 25st December 2023, Start-Time: 1am</p>
+                            <p class="card-text">Venue: Website Link</p>
+                            <p class="card-description">Status: <span class="green-text-style">Open</span></p>
+                        </div>
+                        <a href="eventdetails.html" class="second-header-btn btn btn-primary">View More</a>
+                    </div>
+                    <div class="concert-cards-box card">
+                        <div class="card-image">
+                            <img src="images/kanye.webp" class="card-img-top" alt="KANYE">
+                        </div>
+                        <div class="card-body">
+                            <h6 class="card-title">Bound 2 World Tour</h6>
+                            <h5 class="card-title-bold">Kanye</h5>
+                            <p class="card-text">Saturday, 1st March 2024, Start-Time: 9pm</p>
+                            <p class="card-text">Venue: Link</p>
+                            <p class="card-description">Status: <span class="grey-text-style">Inactive</span></p>
+                        </div>
+                        <a href="eventdetails.html" class="second-header-btn btn btn-primary">View More</a>
+                    </div>
+                    <div class="concert-cards-box card">
+                        <div class="card-image">
+                            <img src="images/lilyallen.webp" class="card-img-top" alt="Lily Allen Vogue">
+                        </div>
+                        <div class="card-body">
+                            <h6 class="card-title">Smile</h6>
+                            <h5 class="card-title-bold">Lily Allen</h5>
+                            <p class="card-text">Sunday, 31st October 2023, Start-Time: 9pm</p>
+                            <p class="card-text">Venue: Link</p>
+                            <p class="card-description">Status: <span class="red-text-style"> Sold Out</span></p>
+                        </div>
+                        <a href="eventdetails.html" class="second-header-btn btn btn-primary">View More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="bg-light text-center text-white">
+            <div class="container p-4 pb-0">
+                <section class="mb-4">
+                    <!-- buttons -->
+                    <a class="second-header-btn btn text-white btn-floating m-1">Instagram </a>
+                    <a class="red-style-btn btn text-white btn-floating m-1">Email </a>
+                    <a class="blue-style-btn btn text-white btn-floating m-1">Phone </a>
+                </section>
+            </div>
+
+            <div class="footer-style text-center p-3">
+                ©2023 Copyright: AlternativeMusic4You
+            </div>
+        </footer>
+
+    </main>
+
+    <!--------------------------------------------------------------->
+    <!---->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
